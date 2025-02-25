@@ -2,10 +2,10 @@
   "name": "counter-app",
   "version": "1.0.0",
   "main": "counter-app.js",
-  "scripts": {
-    "start": "web-dev-server --node-resolve --open --watch",
-    "build": "mkdir -p dist && cp *.html *.js package.json dist/"
-  },
+ "scripts": {
+  "start": "web-dev-server --node-resolve --open --watch",
+  "build": "mkdir -p public && cp *.html *.js public/"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
