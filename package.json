@@ -1,0 +1,20 @@
+{
+  "name": "counter-app",
+  "version": "1.0.0",
+  "main": "counter-app.js",
+  "scripts": {
+    "start": "web-dev-server --node-resolve --open --watch",
+    "build": "mkdir -p dist && cp *.html *.js package.json dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@haxtheweb/multiple-choice": "^10.0.2",
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  }
+}

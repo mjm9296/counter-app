@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter App</title>
+  <script type="module" src="./counter-app.js"></script>
+  <style>
+    :root {
+      --counter-app-number-size: 4rem;
+      --counter-app-button-color: #4285f4;
+      --counter-app-button-hover-color: #2b76e5;
+      --counter-app-limit-color: #ff4d4d;
+      --counter-app-special-18-color: #4d94ff;
+      --counter-app-special-21-color: #9c27b0;
+      --counter-app-focus-color: #2b76e5;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 16px;
+      background-color: #f5f5f5;
+    }
+    
+    h1 {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    
+    .counters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+    }
+    
+    .counter-wrapper {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      width: 300px;
+    }
+    
+    h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Counter App Demo</h1>
+  
+  <div class="counters">
+    <div class="counter-wrapper">
+      <h2>Default Counter</h2>
+      <counter-app></counter-app>
+    </div>
+    
+    <div class="counter-wrapper">
+      <h2>Custom Counter</h2>
+      <counter-app counter="16" min="10" max="25"></counter-app>
+    </div>
+  </div>
+</body>
+</html>
